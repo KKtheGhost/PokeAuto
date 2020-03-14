@@ -139,8 +139,14 @@ class Controller:
 
     def rs_u(self,duration = 0.1):
         self.send('RY MIN',duration)
+    
+    # Left Stick combination
+    def ls_ul(self,duration = 0.1):
+        self.send('LX MIN\r\LY MIN',duration)
 
-    # Quick Example
+
+
+# Quick Example
     def quit_app(self):
         self.h()
         sleep(0.5)
